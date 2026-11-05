@@ -13,4 +13,4 @@ const conexao = mysql.createConnection({
 });
 
 // module.exports = conexao;
-export default conexao
+export default conexao;

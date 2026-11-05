@@ -1,7 +1,7 @@
 {
   "name": "gamehub",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000A\u0000P\u0000I\u0000-\u0000G\u0000a\u0000m\u0000e\u0000H\u0000u\u0000b\u0000\r\u0000 \u0000\"# API-GameHub\"",
+  "description": "��#\u0000 \u0000A\u0000P\u0000I\u0000-\u0000G\u0000a\u0000m\u0000e\u0000H\u0000u\u0000b\u0000\r\u0000 \u0000",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juliaciardi/API-GameHub.git"
+    "url": "git+https://github.com/juliaciardi/GameHuM.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
-    "url": "https://github.com/juliaciardi/API-GameHub/issues"
+    "url": "https://github.com/juliaciardi/GameHuM.git/issues"
   },
-  "homepage": "https://github.com/juliaciardi/API-GameHub#readme",
+  "homepage": "https://github.com/juliaciardi/GameHuM.git#readme",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^18.0.9",

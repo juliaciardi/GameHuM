@@ -1,14 +1,12 @@
 import * as jogoModel from "../models/jogoModel.js";
 import { textoValido, inteiroPositivo } from "../utils/validacoes.js";
 
-
 export function listar(req, res, next) {
     jogoModel.listar((erro, resultado) => {
         if (erro) return next(erro);
         return res.status(200).json(resultado);
     });
 }
-
 
 export function buscarPorId(req, res, next) {
     jogoModel.buscarPorId(req.id, (erro, resultado) => {
@@ -20,7 +18,6 @@ export function buscarPorId(req, res, next) {
     });
 }
 
-
 export function criar(req, res, next) {
     const { titulo, ano_lancamento, estudio_id } = req.body ?? {};
     if (!textoValido(titulo, 150) || !inteiroPositivo(ano_lancamento)
@@ -31,7 +28,6 @@ export function criar(req, res, next) {
     }
     const dados = { titulo: titulo.trim(), ano_lancamento, estudio_id };
 
-
     jogoModel.criar(dados, (erro, resultado) => {
         if (erro) return next(erro);
         return res.status(201).json({
@@ -40,7 +36,6 @@ export function criar(req, res, next) {
         });
     });
 }
-
 
 export function atualizar(req, res, next) {
     const { titulo, ano_lancamento, estudio_id } = req.body ?? {};
@@ -51,7 +46,6 @@ export function atualizar(req, res, next) {
         });
     }
     const dados = { titulo: titulo.trim(), ano_lancamento, estudio_id };
-
 
     jogoModel.buscarPorId(req.id, (erro, registros) => {
         if (erro) return next(erro);
@@ -64,7 +58,6 @@ export function atualizar(req, res, next) {
         });
     });
 }
-
 
 export function deletar(req, res, next) {
     jogoModel.deletar(req.id, (erro, resultado) => {

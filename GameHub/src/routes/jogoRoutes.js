@@ -8,6 +8,6 @@ router.get("/", jogoController.listar);
 router.get("/:id", validarId, jogoController.buscarPorId);
 router.post("/", jogoController.criar);
 router.put("/:id", validarId, jogoController.atualizar);
-router.delete("/:id", validarId, jogoController.excluir);
+router.delete("/:id", validarId, jogoController.deletar);
 
 export default router;
