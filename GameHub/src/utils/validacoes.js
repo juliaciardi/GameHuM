@@ -4,8 +4,7 @@ export function textoValido(valor, limite) {
         && valor.trim().length <= limite;
 }
 
-
-export function inteiroPositivo(valor) {
+function inteiroPositivo(valor) {
     return typeof valor === "number"
         && Number.isSafeInteger(valor)
         && valor > 0;

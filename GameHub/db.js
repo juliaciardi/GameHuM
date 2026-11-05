@@ -1,10 +1,8 @@
 // require("dotenv").config();
-// const myslq = require("mysql2");
-
+// const mysql = require("mysql2");
 
 import "dotenv/config";
 import mysql from "mysql2";
-
 
 const conexao = mysql.createConnection({
     host: process.env.DB_HOST || "localhost",
@@ -14,6 +12,5 @@ const conexao = mysql.createConnection({
     database: process.env.DB_NAME || "gamehub_db"
 });
 
-
 // module.exports = conexao;
-export default conexao;
+export default conexao
